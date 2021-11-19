@@ -33,10 +33,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest --junitxml=./tests/reports/report.xml
+        pytest --junitxml=report.xml
     - name: Upload results to Calliope
       run: curl -X POST
         -H "x-api-key:${{ secrets.API_KEY }}"
         -H "multipart/form-data"
-        -F "file[]=@./tests/reports/report.xml"
+        -F "file[]=@report.xml"
         "https://app.calliope.pro/api/v2/profile/${{ secrets.PROFILE_ID }}/import/junit"
