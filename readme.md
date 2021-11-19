@@ -41,12 +41,6 @@ pytest
 
 ## 👷 CI/CD Setup
 
-We used Github Actions as our CI/CD platform, the tests are called on push and pull requests to the master branch.
-
-Windows:
-
-```
-???
-```
+I used Github Actions as the CI/CD platform, the tests are called on push and pull requests to the master branch.
 
 ## 📝 Calliope Pro Results
