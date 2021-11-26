@@ -10,15 +10,17 @@ API to test: : https://petstore.swagger.io
 Requirements:
 - [ ] List at least 3 important automation scenarios for both the UI and the API
 - [ ] Automate the scenarios.
-- [ ] Set up tests on CI/CD Environment.(Github Actions)
-- [ ] Upload to Github.
-- [ ] Results report inside results folder.
-- [ ] Upload test results to Calliope.pro.
+- [X] Set up tests on CI/CD Environment.(Github Actions)
+- [x] Upload to Github.
+- [x] Results report inside results folder.
+- [x] Upload test results to Calliope.pro.
 - [ ] Readme Details.
 
 ## ✨ Assumptions
 
-## 💡 Next Steps
+- Some of the api tests may fail due to the processing time of the api, since I'm hitting the endpoint as a user. For example: test_update_pet assertion may fail due to the time it takes for the api to internally update the pet.
+
+
 
 ## 💻 Get Started
 
